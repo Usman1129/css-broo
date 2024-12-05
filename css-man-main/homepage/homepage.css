@@ -1,0 +1,90 @@
+/* General Styling */
+* {
+    transition: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3ddd5;
+}
+
+header {
+    background-color: #b2a696;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    color: #333;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 100px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 4%;
+    opacity: 0.5;
+}
+
+h3 {
+    font-size: 25px;
+    color: #333;
+    margin-top: 60px;
+}
+
+.nav-links {
+    margin-top: 30px;
+}
+
+.nav-links .btn {
+    text-decoration: none;
+    background-color: #928980;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 0 15px;
+    transition: background-color 0.3s;
+}
+
+.nav-links .btn:hover {
+    background-color: #59534b;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #59534b;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

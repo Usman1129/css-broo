@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="header-fixed">
+            <span>ѕηαρѕнσт ⸜(｡˃ ᵕ ˂ )⸝♡</span>
+        </div>
+    </div>
+
+    <div class="gallery-container">
+    <div class="gallery">
+        <!-- Example of image items -->
+        <div class="gallery-item">
+            <img src="path/to/your/image1.jpg" alt="Image 1">
+            <p>Description of image 1</p>
+            <p>Uploaded by: Username 1</p>
+            <a href="your-edit-url-here">Edit</a>
+
+            <!-- Delete Form -->
+            <form action="your-delete-url-here" method="POST"
+                onsubmit="return confirm('Are you sure you want to delete this image?');">
+                <!-- Add your CSRF token manually here if needed -->
+                <div class="form-group">
+                    <label for="passcode">Passcode (4 digits):</label>
+                    <input type="text" name="passcode" required maxlength="4" placeholder="Enter passcode to delete">
+                </div>
+
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+
+        <!-- Repeat the above block for other images -->
+        <div class="gallery-item">
+            <img src="path/to/your/image2.jpg" alt="Image 2">
+            <p>Description of image 2</p>
+            <p>Uploaded by: Username 2</p>
+            <a href="your-edit-url-here">Edit</a>
+
+            <!-- Delete Form -->
+            <form action="your-delete-url-here" method="POST"
+                onsubmit="return confirm('Are you sure you want to delete this image?');">
+                <div class="form-group">
+                    <label for="passcode">Passcode (4 digits):</label>
+                    <input type="text" name="passcode" required maxlength="4" placeholder="Enter passcode to delete">
+                </div>
+
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+
+        <!-- Add more gallery items as needed -->
+
+    </div>
+</div>
+
+</body>
+
+</html>
